@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <title>StudyGenie | Progress</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="light">
+    <header class="topbar">
+        <a href="dashboard.html" class="logo">← 🧞 StudyGenie 🧞 </a>
+        <div class="top-right">
+            <button id="themeToggle" class="theme-btn">🌙 Dark</button>
+            <button id="profileBtn" class="profile-btn">👨🏻‍🎓</button>
+        </div>
+    </header>
+
+    <div id="profilePanel" class="profile-panel hidden">
+        <h3 id="pName">Student</h3>
+        <p id="pDetail"></p>
+        <button class="btn ghost" onclick="location.href='index.html'">✏️ Edit</button>
+        
+    </div>
+
+    <main class="page-wrap">
+        <h2>📊 Progress Tracker</h2>
+
+       <div class="stats-grid">
+  <div class="stat-card">
+    <h4>📒 Notes</h4>
+    <p id="notesCount">0</p>
+  </div>
+
+  <div class="stat-card">
+    <h4>⏰ Hours</h4>
+    <p id="hoursCount">0</p>
+  </div>
+
+  <div class="stat-card">
+    <h4>🤖 AI Chats</h4>
+    <p id="chatCount">0</p>
+  </div>
+
+  <div class="stat-card">
+    <h4>🔥 Streak</h4>
+    <p id="streakCount">0</p>
+    </div>
+    </div>
+
+        <div class="rank-card">
+   <h3 id="rankTitle">🌱 Beginner</h3>
+   <p id="rankDesc">
+      Keep learning every day.
+   </p>
+</div>
+        
+        <div class="card">
+
+    <div class="analysis-header">
+
+        <h3>🤖 AI Insights</h3>
+
+        <button id="analyzeProgress"
+                class="analyze-btn">
+
+            Analyze Progress
+
+        </button>
+
+    </div>
+
+    <ul id="insights" style="color:black;">
+
+        <li style="color:black">
+            Click analyze to generate your study report.
+        </li>
+
+    </ul>
+
+</div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+   <meta charset="UTF-8"/>
+
+   <title>StudyGenie | Timer</title>
+
+   <link rel="stylesheet" href="style.css"/>
+
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+</head>
+
+<body class="light">
+  
+ <header class="topbar">
+    <a href="dashboard.html" class="logo">← 🧞 StudyGenie 🧞 </a>
+    <div class="top-right">
+      <button id="themeToggle" class="theme-btn">🌙 Dark</button>
+      <button id="profileBtn" class="profile-btn">👨🏻‍🎓</button>
+    </div>
+  </header>
+
+  <div id="profilePanel" class="profile-panel hidden">
+    <h3 id="pName">Student</h3><p id="pDetail"></p>
+    <button class="btn ghost" onclick="location.href='index.html'">✏️ Edit</button>
+  </div>
+
+  <main class="page-wrap center-wrap">
+    
+    <div class="card glow">
+      <h2>⏱ Study Timer</h2>
+      
+      <div class="time-inputs">
+        <input type="number" id="hrs" min="0" max="24" placeholder="HH"/>
+        <input type="number" id="mins" min="0" max="59" placeholder="MM"/>
+        <input type="number" id="secs" min="0" max="59" placeholder="SS"/>
+      </div>
+      
+      <div class="timer-display" id="timerDisplay">00:00:00</div>
+      
+      <div class="btn-row">
+        <button class="btn primary" id="startTimer">▶ Start</button>
+        <button class="btn ghost" id="pauseTimer">⏸ Pause</button>
+        <button class="btn danger" id="resetTimer">↺ Reset</button>
+      </div>
+    
+    </div>
+  
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

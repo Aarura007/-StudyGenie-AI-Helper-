@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <title>StudyGenie | Dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="light">
+    
+    <header class="topbar">
+        <h1 class="logo"> 🧞 StudyGenie 🧞 </h1>
+        <div class="top-right">
+            <button id="themeToggle" class="theme-btn">🌙 Dark</button>
+            <button id="profileBtn" class="profile-btn" title="Profile">👨🏻‍🎓</button>
+        </div>
+    </header>
+
+    <!-- Profile dropdown -->
+    <div id="profilePanel" class="profile-panel hidden">
+        <h3 id="pName">Student</h3>
+        <p id="pDetail"></p>
+        <button class="btn ghost" onclick="location.href='index.html'">✏️ Edit</button>
+        
+    </div>
+
+    <div class="hero">
+        <h2>Welcome, <span id="welcomeName">Buddy</span> 👋</h2>
+
+        <p>
+            <h3>Your AI-powered study companion for notes,
+            productivity, doubt solving and career growth.</h3>
+        </p>
+    </div>
+
+    <div class="grid">
+        <a href="notes.html" class="feature-card c1">
+            <h3> 📝 Notes 📝 </h3>
+            <p><h4>Create smart notes and organise study material.</h4></p>
+        </a>
+        <a href="chatbot.html" class="feature-card c2">
+            <h3> 🧞 AI Genie 🧞 </h3>
+            <p><h4>Ask doubts & get explanations</h4></p>
+        </a>
+        <a href="progress.html" class="feature-card c3">
+            <h3> 📊 Progress 📊 </h3>
+            <p><h4>Track your growth vs peers</h4></p>
+        </a>
+        <a href="timer.html" class="feature-card c4">
+            <h3> ⏱ Study Timer ⏱ </h3>
+            <p><h4>Set focus sessions up to 24h</h4></p>
+        </a>
+    </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

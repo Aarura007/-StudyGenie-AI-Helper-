@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <title>StudyGenie | Notes</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body class="light">
+    <header class="topbar">
+        <a href="dashboard.html" class="logo">← 🧞 StudyGenie 🧞 </a>
+        <div class="top-right">
+            <button id="themeToggle" class="theme-btn">🌙 Dark</button>
+            <button id="profileBtn" class="profile-btn">👨🏻‍🎓</button>
+        </div>
+    </header>
+
+    <div id="profilePanel" class="profile-panel hidden">
+        <h3 id="pName">Student</h3>
+        <p id="pDetail"></p>
+        <button class="btn ghost" onclick="location.href='index.html'">✏️ Edit</button>
+        
+    </div>
+
+    <main class="page-wrap">
+        <h2>📝 My Notes</h2>
+
+        <div class="card">
+            <h3>Create New Note</h3>
+            <input id="noteTitle" placeholder="Note title..." />
+            <textarea id="noteBody" rows="6" placeholder="Write here..."></textarea>
+            <div class="btn-row">
+                <button class="btn primary" id="saveNote">💾 Save Note</button>
+                <button class="btn ghost" id="resetNote">Reset</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Upload File</h3>
+            <input type="file" id="uploadFile" accept=".pdf,.txt,.doc,.docx,.png,.jpg" />
+            <button class="btn primary" id="uploadBtn">⬆ Upload</button>
+        </div>
+
+        <div class="card">
+            <h3>Saved Notes</h3>
+            <div id="notesList" class="notes-list"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
